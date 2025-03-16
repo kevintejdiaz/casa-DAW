@@ -1,0 +1,13 @@
+# Ignorar cualquier archivo o directorio no deseado
+*M7. - Acceso directo.lnk
+# Ignorar cualquier otro archivo que no sea los directorios deseados
+!/M3.Programaci/
+!/M6.Desnvolupament web en entorn client/
+!/M8.Desplegament d'aplicacions web/
+!/M9. Disseny d'interficies web/
+
+
+# Archivos grandes
+M12.Projecte/PROY1_API/recursos/actividadeconomica.csv
+M12.Projecte/PROY1_API/recursos/locales.csv
+M9.DissenyInterficiesWeb/UF2/AC5/resources/video.mp4
