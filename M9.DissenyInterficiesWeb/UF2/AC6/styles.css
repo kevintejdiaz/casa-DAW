@@ -11,7 +11,7 @@ html {
 /* Estilos para el header */
 header {
     height: 160px;
-    background-color: #ff00cc	;
+    background: linear-gradient(to right, #ff00cc, #00ff33); /* Degradado de izquierda a derecha */
     display: flex;
     align-items: center;
     padding: 0 20px;
@@ -37,32 +37,49 @@ header svg{
 }
 header .contact-btn {
     margin-left: auto;
-    background-color:	#00ff33;
-    color: white;
-    border: none;
-    padding: 30px 40px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: x-large;
-    margin-right: 10%;
+    background-color: transparent; /* Fondo transparente para que sea igual al tuyo */
+    color: white; /* Texto blanco */
+    border: solid; /* Borde sólido */
+    padding: 30px 40px; /* Tamaño del botón */
+    cursor: pointer; /* Cambiar el cursor a mano */
+    border-radius: 80px; /* Borde redondeado */
+    font-size: x-large; /* Tamaño de la fuente */
+    margin-right: 10%; /* Márgenes */
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición para el color y sombra */
 }
 
 header .contact-btn:hover {
-    background-color: #45a049; /* Cambio de color al pasar el mouse */
+    background-color: #45a049; /* Color al pasar el cursor */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para el hover */
 }
+
+.submenu {
+    display: flex;
+    flex-direction: row; /* Asegura que los elementos estén en columna */
+    position: absolute;
+    right: 500px; /* Ajusta la distancia desde el borde derecho */
+    top: 50px; /* Ajusta la distancia desde la parte superior */
+}
+
 
 
 /* Estilos para el main */
 main {
     margin-top: 10px;
     display: flex;
-    flex-direction: column; /* Cambiado para alinear los elementos de arriba hacia abajo */
+    flex-direction: column; /* Alinea los elementos de arriba hacia abajo */
     justify-content: flex-start;
     width: auto;
-    min-height: 740px;
-    background: linear-gradient(to bottom, #ff00cc, #00ff33);
-    overflow-y: auto; /* Agregado para permitir desplazamiento vertical */
+    min-height: 920px;
+    background: linear-gradient(to right, #ff00cc, #00ff33); /* Degradado de izquierda a derecha */
+    overflow-y: auto; /* Permite desplazamiento vertical */
     padding: 20px;
+}
+
+
+.flex-container{
+    display: flex;
 }
 
   .titulo-contacto {
@@ -74,21 +91,21 @@ main {
 
   .caja-desc {
     width: 650px;
-    height: auto;
-    margin: 0 auto;  /* Centra el div horizontalmente */
-    display: flex;
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center;     /* Centra el contenido verticalmente si es necesario */
+    height: 300px!important;
+    justify-content: center; 
+    align-items: center;     
     text-align: center;
     font-size: x-large;
+    border: solid white;
+    border-radius: 10px;
 }
 
   
 .swiper {
-    width: 80%;  /* 60% del ancho disponible */
+    width: 80%;  
     height: auto;
-    margin: auto;  /* Centrarlo */
-    overflow: hidden; /* Evita que las imágenes sobresalgan */
+    margin: auto;  
+    overflow: hidden; 
     border-radius: 10px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
@@ -107,11 +124,28 @@ main {
     object-fit: cover;
 }
 
+.video-btn {
+    background-color: transparent;
+    color: white;
+    border: solid;
+    padding: 30px 40px;
+    cursor: pointer;
+    border-radius: 80px;
+    font-size: x-large;
+    margin: 0 auto; /* Esto centra el botón */
+    transition: box-shadow 0.3s ease;
+}
+
+.video-btn:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Efecto de sombra cuando se pasa el cursor */
+}
+
+
 
 /* lightboxxxx*/
 
 .lightbox {
-    display: none; /* Oculto por defecto */
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -154,7 +188,7 @@ main {
 /* Estilos para el footer */
 footer {
     margin-top: 10px;
-    background-color: #00ff33;
+    background: linear-gradient(to right, #ff00cc, #00ff33); /* Degradado de izquierda a derecha */
     color: white;
     padding: 20px;
     text-align: center;
@@ -191,39 +225,51 @@ footer {
 
 /* iPod Styles */
 .ipod {
-    position: relative;  /* Cambiado a relative */
-    margin-top: 20px; /* Para agregar un espacio entre el contenido anterior y el iPod */
-    align-self: center; /* Centrado horizontalmente */
+    position: relative;  /* Mantiene el control dentro del flujo */
+    margin: 20px auto; /* Centra el iPod horizontalmente */
     background: silver;
-    width: 190px;
+    width: 80%;
     height: 300px;
     border-radius: 20px;
     border: 3px solid #ccc;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
     padding: 15px 0;
-    transition: width 0.3s ease, height 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar elementos internos */
+    justify-content: space-between;
 }
 
+/* Pantalla */
 .pantalla {
-    width: 130px;
+    width: 80%;
     height: 90px;
     background: black;
     border-radius: 5px;
     color: lime;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+    font-size: 14px;
+    text-align: center;
 }
 
+/* Controles */
 .menu {
     position: relative;
-    width: 120px;
+    width: 80%;
     height: 120px;
     background: white;
-    border-radius: 50%;
+    border-radius: 10px;
     box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 15px;
 }
 
+/* Botones */
 .boton {
     position: absolute;
     text-align: center;
@@ -232,40 +278,58 @@ footer {
     cursor: pointer;
 }
 
+/* Botón superior (Menú) */
 .menu-btn {
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
 }
 
+/* Botón inferior (Play) */
 .play-btn {
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
 }
 
+/* Botón derecho (Adelante) */
 .adelante-btn {
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
 }
 
+/* Botón izquierdo (Atrás) */
 .atras-btn {
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
 }
 
+/* Botón central */
 .central-btn {
+    position: absolute;
     width: 40px;
     height: 40px;
-    background: #ccc;
+    background: #ddd;
+    border: 2px solid #aaa;
     border-radius: 50%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
 }
 
+/* Estilo para ocultar el control del reproductor */
+audio {
+    display: block; /* Para asegurarse de que ocupe el espacio en el layout */
+    visibility: hidden; /* Oculta el control del reproductor */
+    transition: visibility 0.3s ease; /* Transición suave para la visibilidad */
+}
 
 /* Estilos para el formulario */
 #contactForm {
@@ -413,13 +477,13 @@ footer {
 /* Video-container Styles */
 
 .video-container {
-    width: 100%;
-    max-width: 900px; /* Ajusta el máximo según necesites */
-    margin: auto; /* Para centrarlo */
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    margin-top: 20px; /* Ajusta el margen según sea necesario */
 }
+
 
 .video-container video {
     width: 100%;

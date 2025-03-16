@@ -11,7 +11,7 @@
 <body>
     <header>
         <div>
-            <div class="logo-container">
+            <div class="logo-container" >
                 <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                     <!-- Círculo exterior -->
                     <circle cx="50" cy="50" r="45" stroke="black" stroke-width="5" fill="none"/>
@@ -27,8 +27,10 @@
         <div>
             
         </div>
-        <h1>Wallpaper X</h1>
-        <button class="contact-btn">Contacto</button>
+        <a href="./index.html" style="text-decoration: none; color: inherit;">
+            <h1>Wallpaper X</h1>
+        </a>
+        <a href="./contacto.html" class="contact-btn">Contacto</a>
 
 
      </header>    
@@ -50,10 +52,10 @@
 
         <div class="ipod">
             <div class="pantalla">
-                <h2>MP3 - Low</h1>
+                <h2 id="song-title">Canciones</h2>
             </div>
-            <audio  src="./songs/MP3 - Low.mp3"></audio>
-
+            <audio id="audio-player" controls></audio>
+        
             <div class="menu">
                 <div class="boton menu-btn">MENU</div>
                 <div class="boton play-btn">▶</div>
@@ -61,7 +63,14 @@
                 <div class="boton atras-btn">⏮</div>
                 <div class="boton central-btn"></div>
             </div>
-        </div>    
+        </div>
+
+       <BR> 
+        <div class="video-container">
+            <a href="./video.html">
+                <button class="video-btn">Acceder a más contenido multimedia</button>
+            </a>
+        </div>
 
     </main>
 
@@ -69,8 +78,6 @@
     <div id="lightbox" class="lightbox">
         <img id="lightbox-img" src="" alt="Imagen ampliada">
     </div>
-
-
 
     <footer>
         <div class="footer-content">
@@ -80,14 +87,14 @@
                 <a href="https://github.com/tu-usuario" target="_blank" aria-label="GitHub">
                     <img  src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" />
                 </a>
-                <a href="https://twitter.com" target="_blank">
+                <a href="https://x.com/wickedmovie?" target="_blank">
                     <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M17.5 3H21L13.5 10.5L22 21H15.5L10.5 14.5L4.5 21H1L9 13L1 3H7.5L12 9L17.5 3ZM16.5 19H18.5L6.5 5H4.5L16.5 19Z" fill="black"/>
                     </svg>
-                <a href="https://www.instagram.com/tu-usuario" target="_blank" aria-label="Instagram">
+                <a href="https://www.instagram.com/wickedmovie/?hl=es" target="_blank" aria-label="Instagram">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
                 </a>
-                <a href="https://www.facebook.com/tu-usuario" target="_blank" aria-label="Facebook">
+                <a href="https://www.facebook.com/wickedmovie" target="_blank" aria-label="Facebook">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" />
                 </a>
             </div>

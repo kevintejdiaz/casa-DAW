@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kevin\\Desktop\\DAW\\2º\\M3.Programació\\UF4\\AC2\\AC2.csproj": {}
+    "C:\\Users\\kevin\\Desktop\\DAW-casa\\M3.Programacio\\UF4\\AC2\\AC2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kevin\\Desktop\\DAW\\2º\\M3.Programació\\UF4\\AC2\\AC2.csproj": {
+    "C:\\Users\\kevin\\Desktop\\DAW-casa\\M3.Programacio\\UF4\\AC2\\AC2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kevin\\Desktop\\DAW\\2º\\M3.Programació\\UF4\\AC2\\AC2.csproj",
+        "projectUniqueName": "C:\\Users\\kevin\\Desktop\\DAW-casa\\M3.Programacio\\UF4\\AC2\\AC2.csproj",
         "projectName": "AC2",
-        "projectPath": "C:\\Users\\kevin\\Desktop\\DAW\\2º\\M3.Programació\\UF4\\AC2\\AC2.csproj",
+        "projectPath": "C:\\Users\\kevin\\Desktop\\DAW-casa\\M3.Programacio\\UF4\\AC2\\AC2.csproj",
         "packagesPath": "C:\\Users\\kevin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kevin\\Desktop\\DAW\\2º\\M3.Programació\\UF4\\AC2\\obj\\",
+        "outputPath": "C:\\Users\\kevin\\Desktop\\DAW-casa\\M3.Programacio\\UF4\\AC2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kevin\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -32,6 +32,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -53,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.1.23463.5/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

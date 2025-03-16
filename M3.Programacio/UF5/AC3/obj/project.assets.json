@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kevin\\Desktop\\DAW\\2º\\M3.Programació\\UF5\\AC3\\AC3.csproj",
+      "projectUniqueName": "C:\\Users\\kevin\\Desktop\\DAW-casa\\M3.Programacio\\UF5\\AC3\\AC3.csproj",
       "projectName": "AC3",
-      "projectPath": "C:\\Users\\kevin\\Desktop\\DAW\\2º\\M3.Programació\\UF5\\AC3\\AC3.csproj",
+      "projectPath": "C:\\Users\\kevin\\Desktop\\DAW-casa\\M3.Programacio\\UF5\\AC3\\AC3.csproj",
       "packagesPath": "C:\\Users\\kevin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kevin\\Desktop\\DAW\\2º\\M3.Programació\\UF5\\AC3\\obj\\",
+      "outputPath": "C:\\Users\\kevin\\Desktop\\DAW-casa\\M3.Programacio\\UF5\\AC3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kevin\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,6 +38,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -59,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.1.23463.5/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
