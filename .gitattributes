@@ -1,2 +1,3 @@
 M12.Projecte/PROY1_API/recursos/actividadeconomica.csv filter=lfs diff=lfs merge=lfs -text
 M9.DissenyInterficiesWeb/UF2/AC6/resources/video/videoDune.mp4 filter=lfs diff=lfs merge=lfs -text
+M12.Projecte/PROY1_API/recursos/locales.csv filter=lfs diff=lfs merge=lfs -text
