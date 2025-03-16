@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#header {
+    height: 15vh;
+    width: 100vw;
+    background-color: black;
+}
+
+body {
+    background-color: #e0e0e0;
+    height: 100vh;
+}
+
+
+h2{
+    padding-top: 1vw;
+    margin: 0;
+    font-size: 2vw;
+    justify-self: center;
+    color: lime;
+}
+
+h1{
+    color: lime;
+    justify-self: center;
+    font-size: 5vw;
+    padding-top: 2vh;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse; 
+    width: 80%; 
+    margin: 10vw auto; 
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px; 
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+.container {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    padding-top: 20px; 
+}
+
+/* iPod Styles */
+.ipod {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: silver;
+    width: 190px;
+    height: 320px;
+    border-radius: 20px;
+    border: 3px solid #ccc;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 15px 0;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+.pantalla {
+    width: 130px;
+    height: 90px;
+    background: black;
+    border-radius: 5px;
+    color: lime;
+}
+
+.menu {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton {
+    position: absolute;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menu-btn {
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.play-btn {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.adelante-btn {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.atras-btn {
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.central-btn {
+    width: 40px;
+    height: 40px;
+    background: #ccc;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Responsivitat - adaptació per a pantalles més petites */
+@media (max-width: 768px) {
+    .ipod {
+        width: 150px; 
+        height: 260px;
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        align-items: center; 
+
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center; 
+        gap: 10px;
+    }
+
+    .ipod {
+        width: 120px;
+        height: 220px;
+    }
+
+    .menu {
+        width: 100px;
+        height: 100px;
+    }
+
+    .pantalla {
+        width: 90px;
+        height: 60px;
+    }
+
+    .boton {
+        font-size: 10px; 
+    }
+}

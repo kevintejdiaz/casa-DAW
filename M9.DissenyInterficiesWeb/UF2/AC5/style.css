@@ -1,0 +1,144 @@
+.burrito { 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ocupa toda la pantalla */
+}
+
+#header {
+    display: flex;
+    height: 175px;
+    width: auto;
+    margin-top: 1vw;
+    gap: 10px;
+}
+
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 20px; /* Espacio entre video y tabla */
+}
+
+
+.video-container {
+    flex: 2; /* Ocupa más espacio */
+    display: flex;
+    justify-content: flex-start; /* Alinea el video a la izquierda */
+}
+
+.video-container video {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 1200px; /* Ajusta el tamaño del video */
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.table-container {
+    flex: 1; /* Ocupa menos espacio */
+    background-color: #BE5F1B;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    max-height: 650px; /* Altura máxima */
+    overflow-y: auto; /* Muestra una barra de desplazamiento cuando sea necesario */
+}
+
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.table-container th, .table-container td {
+    padding: 10px;
+    border: 1px solid #fff;
+}
+
+.table-container th {
+    background-color: #883A19;
+    color: white;
+}
+
+.table-container td {
+    background-color: #DF9065;
+}
+
+
+.dni {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 260px;
+    background-color: #883A19;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc {
+    height: 100%;
+    flex-grow: 1;
+    background-color: #BE5F1B;
+    overflow-y: auto;
+}
+
+.desc p, h2{
+    margin-left: 20px;
+}
+
+
+
+
+.main {
+    flex: 1;
+    display: flex;
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
+}
+
+#footer {
+    height: 100px;
+    background-color: #883A19;
+    display: flex;
+    flex-direction: column; /* Acomoda los elementos en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    text-align: center; /* Asegura que el texto dentro esté centrado */
+    padding: 10px; /* Evita que el texto quede pegado a los bordes */
+}
+
+
+
+body {
+    background-color: #DF9065;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Sombra general para los contenedores */
+.dni, .desc, #footer {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    border-radius: 10px; /* Opcional: bordes redondeados */
+}
+
+
+
+a:hover img,
+a:hover svg {
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+td {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+
+}
+

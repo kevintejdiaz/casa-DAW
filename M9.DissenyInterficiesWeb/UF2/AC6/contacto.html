@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Agrega el CSS de SweetAlert -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.15/dist/sweetalert2.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Círculo exterior -->
+                <circle cx="50" cy="50" r="45" stroke="black" stroke-width="5" fill="none"/>
+                <!-- Círculo interior -->
+                <circle cx="50" cy="50" r="35" stroke="black" stroke-width="5" fill="none"/>
+                <!-- X -->
+                <g transform="translate(22,22) scale(2.5)">
+                    <path d="M17.5 3H21L13.5 10.5L22 21H15.5L10.5 14.5L4.5 21H1L9 13L1 3H7.5L12 9L17.5 3ZM16.5 19H18.5L6.5 5H4.5L16.5 19Z" fill="black"/>
+                </g>
+            </svg>
+        </div>
+
+        <h1>Wallpaper X</h1>
+
+        <button class="contact-btn">Contacto</button>
+
+
+     </header>    
+    <main>
+
+            <h2 class="titulo-contacto">Contacto</h2>
+
+        <div class="caja-desc">
+            <h2>
+                Si tienes preguntas, sugerencias o necesitas asistencia, no dudes en comunicarte con nosotros.
+            </h2>
+        </div>
+        <form id="contactForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea><br><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Tu Nombre. Todos los derechos reservados.</p>
+            
+            <div class="social-icons">
+                <a href="https://github.com/tu-usuario" target="_blank" aria-label="GitHub">
+                    <img  src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" />
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.5 3H21L13.5 10.5L22 21H15.5L10.5 14.5L4.5 21H1L9 13L1 3H7.5L12 9L17.5 3ZM16.5 19H18.5L6.5 5H4.5L16.5 19Z" fill="black"/>
+                    </svg>
+                <a href="https://www.instagram.com/tu-usuario" target="_blank" aria-label="Instagram">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
+                </a>
+                <a href="https://www.facebook.com/tu-usuario" target="_blank" aria-label="Facebook">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" />
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Añadir los scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.15/dist/sweetalert2.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

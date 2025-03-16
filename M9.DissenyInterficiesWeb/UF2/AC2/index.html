@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header"><h1>Arxivos multimedia</h1></div>
+    <div class="container">
+        <div class="ipod">
+            <div class="pantalla">
+                <h2>MP3 - Low</h1>
+            </div>
+            <audio  src="./songs/MP3 - Low.mp3"></audio>
+
+            <div class="menu">
+                <div class="boton menu-btn">MENU</div>
+                <div class="boton play-btn">▶</div>
+                <div class="boton adelante-btn">⏭</div>
+                <div class="boton atras-btn">⏮</div>
+                <div class="boton central-btn"></div>
+            </div>
+        </div>
+
+        <div class="ipod">
+            <div class="pantalla">
+                <h2>OGG</h1>
+                <audio  src="./songs/OGG.ogg"></audio>
+            </div>
+            <div class="menu">
+                <div class="boton menu-btn">MENU</div>
+                <div class="boton play-btn">▶</div>
+                <div class="boton adelante-btn">⏭</div>
+                <div class="boton atras-btn">⏮</div>
+                <div class="boton central-btn"></div>
+            </div>
+        </div>
+
+        <div class="ipod">
+            <div class="pantalla">
+                <h2>MP3 - High</h1>
+                <audio  src="./songs/MP3 - High.mp3"></audio>
+            </div>
+            <div class="menu">
+                <div class="boton menu-btn">MENU</div>
+                <div class="boton play-btn">▶</div>
+                <div class="boton adelante-btn">⏭</div>
+                <div class="boton atras-btn">⏮</div>
+                <div class="boton central-btn"></div>
+            </div>
+        </div>
+
+        <div class="ipod">
+            <div class="pantalla">
+                <audio  src="./songs/WAV.wav"></audio>
+                <h2>WAV</h1>
+            </div>
+            <div class="menu">
+                <div class="boton menu-btn">MENU</div>
+                <div class="boton play-btn">▶</div>
+                <div class="boton adelante-btn">⏭</div>
+                <div class="boton atras-btn">⏮</div>
+                <div class="boton central-btn"></div>
+            </div>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Formato</th>
+                <th>Calidad</th>
+                <th>Compresión</th>
+                <th>Peso del archivo</th>
+                <th>Soporte en navegadores</th>
+                <th>Casos de uso</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>FLAC</td>
+                <td>Muy alta</td>
+                <td>Compresión sin pérdida</td>
+                <td>Grande</td>
+                <td>Limitado</td>
+                <td>Archivar música sin perder calidad</td>
+            </tr>
+            <tr>
+                <td>WAV</td>
+                <td>Muy alta</td>
+                <td>Sin compresión</td>
+                <td>Muy grande</td>
+                <td>Amplio</td>
+                <td>Edición de audio, producción musical</td>
+            </tr>
+            <tr>
+                <td>OGG</td>
+                <td>Alta</td>
+                <td>Alta (con pérdida)</td>
+                <td>Moderado</td>
+                <td>Mayormente en Firefox y Chrome</td>
+                <td>Juegos, streaming, alternativas a MP3</td>
+            </tr>
+            <tr>
+                <td>MP3 - High</td>
+                <td>Alta</td>
+                <td>Alta (con pérdida)</td>
+                <td>Moderado</td>
+                <td>Amplio</td>
+                <td>Uso general, reproducción en la mayoría de dispositivos</td>
+            </tr>
+            <tr>
+                <td>MP3 - Low</td>
+                <td>Baja</td>
+                <td>Alta (con pérdida)</td>
+                <td>Pequeño</td>
+                <td>Amplio</td>
+                <td>Streaming, almacenamiento con poco espacio</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+#gate{
+    width: 550px;
+    height: 300px;
+    background-image: url('https://en.js.cx/clipart/soccer-gate.svg');
+    background-size: cover;
+}
+
+#ball{
+    position: absolute;
+    top: 400px;
+    left: 200px;
+    width: 50px;
+    transform: scale(1.1);
+}
+
+#keeper{
+    position: relative;
+    width: 40%;
+    bottom: -100px;
+    left: 150px;
+}
+
+.goal-zone{
+    background-color: greenyellow;
+}
+
+.goal-keeper-zone{
+    background-color: orange;
+}

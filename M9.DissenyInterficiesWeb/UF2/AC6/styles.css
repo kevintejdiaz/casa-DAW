@@ -1,0 +1,429 @@
+header, footer, main {
+    border-radius: 20px;
+    border: transparent; /* Para ver la forma */
+}
+
+html {
+    font-family: 'Playfair Display', serif;
+    background-color: #fbd5f3;
+}
+
+/* Estilos para el header */
+header {
+    height: 160px;
+    background-color: #ff00cc	;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+/* 
+header .logo-container {
+    display: flex;
+    align-items: center;
+} */
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 80px;
+    /* margin-right: 10px; */
+    margin-right: 50px;
+}
+
+header svg{
+    margin-left: 14%;
+}
+header .contact-btn {
+    margin-left: auto;
+    background-color:	#00ff33;
+    color: white;
+    border: none;
+    padding: 30px 40px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: x-large;
+    margin-right: 10%;
+}
+
+header .contact-btn:hover {
+    background-color: #45a049; /* Cambio de color al pasar el mouse */
+}
+
+
+/* Estilos para el main */
+main {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column; /* Cambiado para alinear los elementos de arriba hacia abajo */
+    justify-content: flex-start;
+    width: auto;
+    min-height: 740px;
+    background: linear-gradient(to bottom, #ff00cc, #00ff33);
+    overflow-y: auto; /* Agregado para permitir desplazamiento vertical */
+    padding: 20px;
+}
+
+  .titulo-contacto {
+    font-size: 75px;
+    color: #fff;
+    text-align: center;  /* Centra el texto horizontalmente */
+    margin: 20px 10px 0px 5px;
+  }
+
+  .caja-desc {
+    width: 650px;
+    height: auto;
+    margin: 0 auto;  /* Centra el div horizontalmente */
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center;     /* Centra el contenido verticalmente si es necesario */
+    text-align: center;
+    font-size: x-large;
+}
+
+  
+.swiper {
+    width: 80%;  /* 60% del ancho disponible */
+    height: auto;
+    margin: auto;  /* Centrarlo */
+    overflow: hidden; /* Evita que las imágenes sobresalgan */
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+/* lightboxxxx*/
+
+.lightbox {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    cursor: zoom-out;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+.img-expanded {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.5);
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+    cursor: zoom-out;
+}
+
+
+
+/* Estilos para el footer */
+footer {
+    margin-top: 10px;
+    background-color: #00ff33;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+/* Estilos para los iconos sociales */
+.social-icons img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); /* Efecto hover */
+}
+
+.Logo {
+    height: 50px;
+    width: 50px;
+}
+
+
+
+
+/* iPod Styles */
+.ipod {
+    position: relative;  /* Cambiado a relative */
+    margin-top: 20px; /* Para agregar un espacio entre el contenido anterior y el iPod */
+    align-self: center; /* Centrado horizontalmente */
+    background: silver;
+    width: 190px;
+    height: 300px;
+    border-radius: 20px;
+    border: 3px solid #ccc;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 15px 0;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+.pantalla {
+    width: 130px;
+    height: 90px;
+    background: black;
+    border-radius: 5px;
+    color: lime;
+}
+
+.menu {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton {
+    position: absolute;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menu-btn {
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.play-btn {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.adelante-btn {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.atras-btn {
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.central-btn {
+    width: 40px;
+    height: 40px;
+    background: #ccc;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Estilos para el formulario */
+#contactForm {
+    width: 65%; /* Hacerlo más ancho */
+    max-width: 700px; /* Limitar el tamaño en pantallas grandes */
+    margin: 50px auto; /* Centrarlo verticalmente y horizontalmente */
+    background: white;
+    padding: 40px;
+    padding-right: 60px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    
+}
+
+/* Estilos para los labels */
+#contactForm label {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Estilos para los inputs y textarea */
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid #ff00cc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Cambiar color cuando se enfocan */
+#contactForm input:focus,
+#contactForm textarea:focus {
+    border-color: #00ff33;
+    box-shadow: 0 0 10px rgba(0, 255, 51, 0.5);
+}
+
+/* Estilos para el botón de enviar */
+#contactForm button {
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to right, #ff00cc, #00ff33);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#contactForm button:hover {
+    background: linear-gradient(to right, #00ff33, #ff00cc);
+    transform: scale(1.05);
+}
+
+/* Adaptación para móviles */
+@media (max-width: 480px) {
+    #contactForm {
+        width: 90%;
+        padding: 20px;
+    }
+
+    #contactForm button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+
+/* Responsivitat - adaptació per a pantalles més petites */
+@media (max-width: 768px) {
+    .ipod {
+        width: 150px; 
+        height: 260px;
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        align-items: center; 
+
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center; 
+        gap: 10px;
+    }
+
+    .ipod {
+        width: 120px;
+        height: 220px;
+    }
+
+    .menu {
+        width: 100px;
+        height: 100px;
+    }
+
+    .pantalla {
+        width: 90px;
+        height: 60px;
+    }
+
+    .boton {
+        font-size: 10px; 
+    }
+
+    header .contact-btn {
+        padding: 15px 25px; /* Hacer el botón aún más pequeño */
+        font-size: medium;
+    }
+
+    header h1 {
+        display: none; /* Oculta el h1 en pantallas pequeñas */
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    
+    header .contact-btn {
+        padding: 25px 35px; /* Reducir tamaño del botón */
+        font-size: large;
+    }
+    #contactForm {
+        width: 80%;
+    }
+
+}
+
+
+/* Video-container Styles */
+
+.video-container {
+    width: 100%;
+    max-width: 900px; /* Ajusta el máximo según necesites */
+    margin: auto; /* Para centrarlo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto; /* Mantiene la proporción del video */
+    object-fit: cover; /* Ajusta el video sin deformarlo */
+    border-radius: 10px;
+}

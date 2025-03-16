@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 style="color: white;">Descubre España</h1>
+    <form action="">
+        <label>Comunitat: </label><select name="ccaa" id="ccaa">
+            <option value="" disabled selected>Selecciona una opción</option>
+        </select><br><br>
+        <label>Província: </label><select name="provincia" id="provincia">
+            <option value="" disabled selected>Selecciona una opción</option>
+        </select><br><br>
+        <label>Població: </label><select name="poblacion" id="poblacion">
+            <option value="" disabled selected>Selecciona una opción</option>
+        </select><br><br>
+        <input type="submit" value="ENVIAR" id="submit">
+        <div class="switch-button">
+            <p>Local Storage</p>
+            <input type="checkbox" id="localStorageToggle">
+            <label for="switch-label"></label>
+        </div>
+    </form>
+
+    <div class="espaciador"></div>
+
+    <button class="accordion">Local Storage API</button>
+    <div class="panel">
+        <p>La Local Storage API permite almacenar datos de manera persistente en el navegador del usuario, incluso después de cerrar o recargar la página.</p>
+        <ul>
+            <li><strong>localStorage.setItem(key, value):</strong> Guarda un valor con una clave específica en el almacenamiento local.</li>
+            <li><strong>localStorage.getItem(key):</strong> Recupera el valor almacenado asociado a la clave proporcionada.</li>
+            <li><strong>localStorage.removeItem(key):</strong> Elimina un elemento específico del almacenamiento local.</li>
+            <li><strong>localStorage.clear():</strong> Borra todos los datos almacenados en el almacenamiento local.</li>
+        </ul>
+    </div>
+    
+    <button class="accordion">FullScreen API</button>
+    <div class="panel">
+        <p>La FullScreen API permite cambiar el contenido de la página web a pantalla completa, proporcionando una experiencia más inmersiva.</p>
+        <ul>
+            <li><strong>Element.requestFullscreen():</strong> Pone el elemento en pantalla completa.</li>
+            <li><strong>document.exitFullscreen():</strong> Sale del modo pantalla completa y vuelve al estado normal.</li>
+        </ul>
+    </div>
+    
+    <button class="accordion">Screen Wake Lock API</button>
+    <div class="panel">
+        <p>La Screen Wake Lock API permite evitar que la pantalla de un dispositivo se apague o atenúe automáticamente mientras se está ejecutando una tarea importante.</p>
+        <ul>
+            <li><strong>navigator.wakeLock.request('screen'):</strong> Solicita que la pantalla permanezca encendida.</li>
+            <li><strong>wakeLock.release():</strong> Libera el bloqueo de la pantalla, permitiendo que se apague o atenúe normalmente.</li>
+            <li><strong>document.addEventListener("fullscreenchange", ... ):</strong> Detecta cambios en el estado de pantalla completa y puede usarse para gestionar el bloqueo de pantalla.</li>
+        </ul>
+    </div>
+    
+
+    <div id="image-container"></div>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
