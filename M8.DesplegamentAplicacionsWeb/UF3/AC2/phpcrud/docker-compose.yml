@@ -1,0 +1,28 @@
+services: 
+  crud:
+    build:
+      context: .
+      dockerfile: ./Dockerfile 
+    ports:
+      - 3000:80
+    volumes:
+      - ./src:/var/www/html
+    links:
+      - mysql
+    networks:
+      - default
+  mysql:
+    image: mysql:5.7
+    volumes: 
+      - crud-mysql-data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: crud
+    networks:
+      - default
+
+
+volumes:
+  crud-mysql-data:
+    external: true
+    name: crud-mysql-data 
