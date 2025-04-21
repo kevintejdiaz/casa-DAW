@@ -1,0 +1,23 @@
+.avatar {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #e63946;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  h1 {
+    color: #e63946;
+  }
+  
+  section {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+  }

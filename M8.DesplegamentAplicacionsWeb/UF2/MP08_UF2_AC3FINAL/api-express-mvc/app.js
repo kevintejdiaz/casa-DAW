@@ -6,9 +6,9 @@ const routes = require('./routes/routes.js')
 const app = express()
 
 // Configurar middleware
-app.use(cors());          // para evitar CORS
-app.use(express.json());  // para parsear contenido JSON
-app.use('/', routes)      // para enrutar peticiones
+app.use(cors());
+app.use(express.json());
+app.use('/', routes)
 
 // Arranque del servidor
 app.listen(5000, () => {

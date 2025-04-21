@@ -1,9 +1,10 @@
-require('dotenv').config(); // Esto reemplaza el require anterior
+// Library.js
+require('dotenv').config();
 
 let Library;
-if (config.DB_TYPE === "mysql") {
+if (process.env.DB_TYPE === "mysql") {
     Library = require("./LibraryMySQL");
-} else if (config.DB_TYPE === "mongodb") {
+} else if (process.env.DB_TYPE === "mongodb") {
     Library = require("./LibraryMongo");
 } else {
     throw new Error("Database type not supported");

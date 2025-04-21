@@ -3,17 +3,26 @@ require('dotenv').config();
 
 class LibraryMongo {
     constructor() {
-        this.client = new MongoClient(config.MONGODB.URI, { useNewUrlParser: true, useUnifiedTopology: true });
+        this.client = new MongoClient(process.env.MONGODB_URI, { 
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+            serverSelectionTimeoutMS: 5000
+        });
         this.db = null;
         this.collection = null;
     }
-
+    
     async connect() {
         if (!this.db) {
-            await this.client.connect();
-            this.db = this.client.db(config.MONGODB.DB);
-            this.collection = this.db.collection("books");
-            console.log("Connected to MongoDB");
+            try {
+                await this.client.connect();
+                this.db = this.client.db(process.env.MONGODB_DB);
+                this.collection = this.db.collection("books");
+                console.log("✅ Connected to MongoDB");
+            } catch (error) {
+                console.error("❌ MongoDB connection error:", error);
+                throw error;
+            }
         }
     }
 
@@ -30,7 +39,6 @@ class LibraryMongo {
                 year: book.year
             }));
 
-            console.log("Books fetched from MongoDB:", booksWithId);
             return booksWithId;
         } catch (error) {
             console.error("Error fetching books:", error);

@@ -1,0 +1,15 @@
+C:\Users\kevin\Desktop\DAW\2\M3.Programacio\UF5\REPASO EXAMEN\obj\Debug\net8.0\REPASO EXAMEN.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kevin\Desktop\DAW\2\M3.Programacio\UF5\REPASO EXAMEN\obj\Debug\net8.0\REPASO EXAMEN.AssemblyInfoInputs.cache
+C:\Users\kevin\Desktop\DAW\2\M3.Programacio\UF5\REPASO EXAMEN\obj\Debug\net8.0\REPASO EXAMEN.AssemblyInfo.cs
+C:\Users\kevin\Desktop\DAW\2\M3.Programacio\UF5\REPASO EXAMEN\obj\Debug\net8.0\REPASO EXAMEN.csproj.CoreCompileInputs.cache
+C:\Users\kevin\Desktop\DAW\2\M3.Programacio\UF5\REPASO EXAMEN\obj\Debug\net8.0\REPASO EXAMEN.sourcelink.json
+C:\Users\kevin\Desktop\DAW\2\M3.Programacio\UF5\REPASO EXAMEN\bin\Debug\net8.0\REPASO EXAMEN.exe
+C:\Users\kevin\Desktop\DAW\2\M3.Programacio\UF5\REPASO EXAMEN\bin\Debug\net8.0\REPASO EXAMEN.deps.json
+C:\Users\kevin\Desktop\DAW\2\M3.Programacio\UF5\REPASO EXAMEN\bin\Debug\net8.0\REPASO EXAMEN.runtimeconfig.json
+C:\Users\kevin\Desktop\DAW\2\M3.Programacio\UF5\REPASO EXAMEN\bin\Debug\net8.0\REPASO EXAMEN.dll
+C:\Users\kevin\Desktop\DAW\2\M3.Programacio\UF5\REPASO EXAMEN\bin\Debug\net8.0\REPASO EXAMEN.pdb
+C:\Users\kevin\Desktop\DAW\2\M3.Programacio\UF5\REPASO EXAMEN\obj\Debug\net8.0\REPASO EXAMEN.dll
+C:\Users\kevin\Desktop\DAW\2\M3.Programacio\UF5\REPASO EXAMEN\obj\Debug\net8.0\refint\REPASO EXAMEN.dll
+C:\Users\kevin\Desktop\DAW\2\M3.Programacio\UF5\REPASO EXAMEN\obj\Debug\net8.0\REPASO EXAMEN.pdb
+C:\Users\kevin\Desktop\DAW\2\M3.Programacio\UF5\REPASO EXAMEN\obj\Debug\net8.0\REPASO EXAMEN.genruntimeconfig.cache
+C:\Users\kevin\Desktop\DAW\2\M3.Programacio\UF5\REPASO EXAMEN\obj\Debug\net8.0\ref\REPASO EXAMEN.dll

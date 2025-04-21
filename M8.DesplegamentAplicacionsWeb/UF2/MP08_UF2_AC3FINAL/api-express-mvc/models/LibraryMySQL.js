@@ -4,22 +4,27 @@ require('dotenv').config();
 class LibraryMySQL {
     constructor() {
         this.connection = mysql.createConnection({
-            host: config.MYSQL.HOST,
-            user: config.MYSQL.USER,
-            password: config.MYSQL.PASSWORD,
-            database: config.MYSQL.DB
+            host: process.env.MYSQL_HOST,  // Cambiado a process.env
+            user: process.env.MYSQL_USER,
+            password: process.env.MYSQL_PASSWORD,
+            database: process.env.MYSQL_DB
         }).promise();
     }
 
-    async listAll() {
-        try {
-            const [rows] = await this.connection.query("SELECT * FROM books");
-            return rows;
-        } catch (error) {
-            console.error("Error fetching books:", error);
-            return [];
-        }
+async listAll() {
+    try {
+        const [rows] = await this.connection.query("SELECT * FROM books");
+        return rows.map(book => ({
+            id: book.id,
+            title: book.title,
+            author: book.author,
+            year: book.year.toString()
+        }));
+    } catch (error) {
+        console.error("Error fetching books:", error);
+        return [];
     }
+}
 
     async create(newBook) {
         try {
@@ -47,7 +52,7 @@ class LibraryMySQL {
                 return null;
             }
     
-            console.log("Usuario encontrado en MySQL:", rows[0]);  // 🔹 Ver qué devuelve MySQL
+            console.log("Usuario encontrado en MySQL:", rows[0]);
             console.log("Contraseña en MySQL (tipo de dato):", typeof rows[0].password);
     
             return rows[0];

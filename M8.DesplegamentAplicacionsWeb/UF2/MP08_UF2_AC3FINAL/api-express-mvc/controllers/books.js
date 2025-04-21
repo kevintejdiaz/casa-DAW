@@ -1,4 +1,3 @@
-// Importamos el modelo de datos y autenticación
 const Library = require('../models/Library');
 const { generateToken } = require("../mw/auth");
 

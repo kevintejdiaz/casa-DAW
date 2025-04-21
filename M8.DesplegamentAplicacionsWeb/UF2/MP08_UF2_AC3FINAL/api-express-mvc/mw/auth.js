@@ -3,7 +3,7 @@ const bcrypt = require("bcrypt");
 require('dotenv').config();
 const Library = require("../models/Library");
 
-const SECRET_KEY = process.env.JWT_SECRET || "supersecreto123";
+const SECRET_KEY = process.env.JWT_SECRET;
 
 // Middleware para verificar el token en las rutas protegidas
 const jwtAuth = (req, res, next) => {
