@@ -7,8 +7,9 @@
     "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "module": "esnext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
@@ -18,18 +19,24 @@
         "name": "next"
       }
     ],
+    // esto habilita tus alias `@/...`
     "baseUrl": ".",
     "paths": {
       "@/*": ["./*"]
     }
   },
   "include": [
+    // tipos de Next.js
     "next-env.d.ts",
+    // tus declaraciones para CSS, imágenes, etc.
+    "global.d.ts",
+    // todo tu código TS/TSX y CSS modules
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts",
-    "app/lib/placeholder-data.ts",
-    "scripts/seed.js"
+    "**/*.module.css",
+    "**/*.css",
+    // tipos generados por Next en .next
+    ".next/types/**/*.ts"
   ],
   "exclude": ["node_modules"]
 }
